@@ -1,21 +1,13 @@
-# rainycrying.github.io
-# 查尔斯的知识库
+# 智能运维
 
 <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
     <img src="https://img.shields.io/badge/文章%20License-CC%204.0%20BY--SA-blue.svg">
 </a>
-<a href="https://github.com/Charles7c/charles7c.github.io/blob/main/LICENSE" target="_blank">
+<a href="https://github.com/rainycrying/rainycrying.github.io/blob/main/LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/源码%20License-MIT-blue.svg">
 </a>
-<a href="https://github.com/rainycrying/rainycrying.github.io/actions/workflows/deploy-pages.yml" target="_blank">
-    <img src="https://github.com/rainycrying/rainycrying.github.io/actions/workflows/deploy-pages.yml/badge.svg">
-</a>
 
-
-
-🐢 [GitHub Pages（完整体验）](https://www.rainycrying.com) | 🐇 
-
-## 开始
+🐢 [GitHub Pages（完整体验）](https://www.rainycrying.com)  🐇 
 
 ## 特别鸣谢
 
