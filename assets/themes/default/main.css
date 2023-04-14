@@ -23,15 +23,12 @@ h1, h2, h3, h4 {
 
 /* 为代码块定义的样式 */
 pre.prettyprint {
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace !important;
-    font-size: 11px;
+    font-family: Monaco,Consolas,Monospace,'Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New','宋体';
+    font-size: 14px;
     border: 1px solid #e1e1e8;
     border-radius: 4px;
 }
 pre.prettyprint ol {
-    margin: 0;
-}
-div#article-content pre.prettyprint li {
     margin: 0;
 }
 
@@ -139,26 +136,6 @@ div#rss {
     text-align: right;
 }
 
-/* 独立页面 */
-div#page-content p.picture {
-    text-align: center;
-}
-div#page-content h1,
-                    h2,
-                    h3 {
-    color: #2a2a2a;
-}
-div#page-content blockquote {
-    margin-left: 5px;
-    padding-left: 30px;
-    border-left: 5px solid #ccc;
-    font-size: 14px;
-}
-div#page-content li {
-    margin: 7px 0;
-    color: #5a5a5a;
-}
-
 /* 标签配置 */
 div#tag-cloud {
     border: 1px dashed #ccc;
@@ -214,9 +191,4 @@ div#topnav ul li a {
 div#topnav ul li.sep {
     color: #ccc;
     margin: 0 12px;
-
-}
-div.addthis_inline_share_toolbox {
-    text-align: right;
-    margin-top: 50px;
 }
