@@ -1,0 +1,28 @@
+<script >
+        // 定义白名单数组
+const whiteList = ['rainycrying.com', 'xn--e1to22ajja.com', 'xn--vo1aa064g.com', 'xn--vo1aa064g.xn--6qq986b3xl'];
+// 获取当前域名
+const currentHost = window.location.host;
+// 获取 id 为 innerText 的元素
+const exampleElement = document.getElementById('beian_innerText');
+
+for (let i = 0; i < whiteList.length; i++) {
+  if (currentHost.includes(whiteList[i])) {
+        if (whiteList[i] == 'rainycrying.com') {
+        exampleElement.innerText = '晋ICP备19006860号-1';
+        }else if(whiteList[i] == 'xn--e1to22ajja.com'){
+                exampleElement.innerText = '晋ICP备19006860号-2';
+        }
+        else if(whiteList[i] == 'xn--vo1aa064g.com'){
+                exampleElement.innerText = '晋ICP备19006860号-3';
+        }
+        else if(whiteList[i] == 'xn--vo1aa064g.xn--6qq986b3xl'){
+                exampleElement.innerText = '晋ICP备19006860号-4';
+        }
+        else {
+        console.log('当前域名不在白名单中');
+        }
+    break;
+  }
+}
+</script>
