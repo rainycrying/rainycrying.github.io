@@ -6,11 +6,11 @@
                 <li><a href="/">首页</a></li>
                 <li class="sep"> | </li>
                 <li><a href="/tag.html">标签</a></li>
-                <% include inc/navbar %>
+                {% include navbar.html %}
             </ul>
             <div style="clear:both;"></div>
         </div>
-        <div id="aboutme"><p><%- site.master.about %></p></div>
+        <div id="aboutme"><p>{{- site.master.about }}</p></div>
     </div>
 </div>
 {% include footer.html %}
