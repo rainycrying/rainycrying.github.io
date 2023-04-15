@@ -2,17 +2,13 @@
 <div id="main">
     <div id="main-inner">
         <div id="topnav">
-            <ul>
-                <li><a href="/">首页</a></li>
-                <li class="sep"> | </li>
-                <li><a href="/tag.html">标签</a></li>
-                {% include navbar.html %}
-            </ul>
-            <div style="clear:both;"></div>
         </div>
-        <div id="aboutme"><p>{{- site.master.about }}</p></div>
-    </div>
+        <h1>About me</h1>
+        <div id="page-content">
+            <h2 id="自我介绍">自我介绍</h2>
 {% include pages.html %}
-
+        </div>
+    </div>
 </div>
+
 {% include footer.html %}
