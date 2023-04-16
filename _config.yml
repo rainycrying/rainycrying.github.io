@@ -2,3 +2,10 @@ title: Midnight theme
 description: Midnight is a theme for GitHub Pages
 subtitle: subtitle
 show_downloads: true
+## 侧边栏设置
+# 是否开启侧边栏 true 开始 false 关闭
+sidebar: true
+# 侧边栏描述语句
+sidebar-about-description: "知识就是力量。"
+# 侧边栏头像
+sidebar-avatar: /img/sidebar-avatar.jpg
