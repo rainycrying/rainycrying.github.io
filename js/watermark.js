@@ -90,6 +90,18 @@ function watermark(settings) {
     document.body.appendChild(oTemp);
   }
   
+function getIP() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://test.ipw.cn", false);
+  xhr.send();
+  if (xhr.status === 200) {
+    var response = xhr.responseText;
+    var ip = response.split(":")[1].trim();
+    return ip;
+  } else {
+    return null;
+  }
+}
 function getCookieValue() {
       var timestamp = new Date().getTime();
       var date = new Date(timestamp);
@@ -98,7 +110,8 @@ function getCookieValue() {
       var day = date.getDate();
       var formattedDate = year + '-' + month + '-' + day;
       var domain = window.location.hostname;
-      var output = domain + '_' + formattedDate;
+      var ip = getIP();
+      var output = domain + '_' + formattedDate + '_' + ip;
 
       var cookies = document.cookie.split(';');
       for (var i = 0; i < cookies.length; i++) {
