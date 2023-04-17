@@ -96,7 +96,7 @@ function getIP() {
   xhr.send();
   if (xhr.status === 200) {
     var response = xhr.responseText;
-    var ip = response.split(":")[1].trim();
+    var ip = response;
     return ip;
   } else {
     return null;
