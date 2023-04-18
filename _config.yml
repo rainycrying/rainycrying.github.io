@@ -8,4 +8,4 @@ sidebar: true
 # 侧边栏描述语句
 sidebar-about-description: "知识就是力量。"
 # 侧边栏头像
-sidebar-avatar: /img/sidebar-avatar.jpg
+sidebar-avatar: /img/static/sidebar-avatar.jpg
