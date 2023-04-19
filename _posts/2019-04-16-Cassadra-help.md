@@ -5,6 +5,9 @@ categories: [Cassandra,help]
 tags: [Cassandra,help]
 ---
 #Cassandra 简介
+
+
+
 Apache Cassandra是一个高度可扩展的高性能分布式数据库，用于处理大量商用服务器上的大量数据，提供高可用性，无单点故障。这是一种NoSQL类型的数据库。 让我们先了解一下NoSQL数据库。
 ##NoSQL 数据库
 

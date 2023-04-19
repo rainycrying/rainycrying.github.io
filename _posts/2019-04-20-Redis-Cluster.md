@@ -5,6 +5,9 @@ categories: [Redis,Cluster]
 tags: [Redis,Cluster]
 ---
 #Redis Cluster学习整理
+
+
+
 redis介绍
 www.redis.io
 redis是一个基于内存的K-V存储数据库。支持存储的类型有string,list,set,zset(sorted set),hash等。这些数据类型都支持push/pop、add/remove及取交集并集和差集及更丰富的操作，而且这些操作都是原子性的。redis支持各种不同方式的排序。保证效率的情况下，数据缓存在内存中。同时redis提供了持久化策略，不同的策略触发同步到磁盘或者把修改操作写入追加的记录文件，在此基础上实现了master-slave。
