@@ -92,7 +92,7 @@ function watermark(settings) {
   
 function getIP() {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://ip.rainycrying.com/", false);
+  xhr.open("GET", "https://ip.rainycrying.com/", false);
   xhr.send();
   if (xhr.status === 200) {
     var response = xhr.responseText;
