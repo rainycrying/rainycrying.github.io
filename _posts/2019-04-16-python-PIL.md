@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "python+PIL图像相似度检测"
-categories: [【python,PIL]
-tags: [【python,PIL]
+categories: [python,PIL]
+tags: [python,PIL]
 ---
 #【python + PIL】图像相似度检测
 
