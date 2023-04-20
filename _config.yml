@@ -9,3 +9,4 @@ sidebar: true
 sidebar-about-description: "知识就是力量。"
 # 侧边栏头像
 sidebar-avatar: /img/static/sidebar-avatar.jpg
+paginate: 5
