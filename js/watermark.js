@@ -106,7 +106,7 @@ function generateWatermark() {
     const domain = window.location.hostname;
 
     getIP(function (ip) {
-        const output = `${domain}_${formattedDate}_${ip || 'unknown'}`;
+        const output = `${ip || 'unknown'}`;
 
         const cookies = document.cookie.split(';');
         for (let i = 0; i < cookies.length; i++) {
