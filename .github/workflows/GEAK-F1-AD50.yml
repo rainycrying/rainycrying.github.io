@@ -1,15 +1,33 @@
-name: CI
+name: Build and Deploy Jekyll
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main  # 当推送到 main 分支时触发构建
 
 jobs:
-  hello:
-    runs-on: self-hosted
+  build:
+    runs-on: self-hosted  # 使用自托管的 Runner
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2  # 克隆仓库代码
 
-      - name: Run a multi-line script
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1  # 设置 Ruby 环境
+        with:
+          ruby-version: '3.1'  # 设置 Ruby 版本，可以根据需要调整
+
+      - name: Install dependencies
         run: |
-          date
-          uname -a 
+          gem install bundler
+          bundle install  # 安装 Jekyll 和相关依赖
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build  # 构建 Jekyll 网站
+
+      - name: Deploy to GitHub Pages
+        run: |
+          mv _site public  # 将构建输出移动到 public 目录，GitHub Pages 会使用这个目录
+        env:
+          CI: true
